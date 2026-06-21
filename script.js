@@ -83,10 +83,11 @@ const mensagem =
     `Presente: ${nomePresente}`;
 
 // Abre WhatsApp
-window.location.href =
-    `https://wa.me/${telefone}?text=${encodeURIComponent(mensagem)}`;
+const url  = 
+    `https://api.whatsapp.com/send?phone=${telefone}?text=${encodeURIComponent(mensagem)}`;
 
-carregarPresentes();
+window.location.href = url;
+
         });
 
     });
