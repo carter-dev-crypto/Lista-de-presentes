@@ -65,11 +65,30 @@ function adicionarEventos() {
             const id = btn.dataset.id;
 
             await updateDoc(doc(db,"presentes",id),{
-                reservado:true,
-                reservadoPor:nome
-            });
+    reservado:true,
+    reservadoPor:nome
+});
 
-            carregarPresentes();
+// Descobre qual presente foi reservado
+const card = btn.closest(".card");
+const nomePresente = card.querySelector("h3").innerText;
+
+// Número que vai receber a mensagem
+const telefone = "558598683946";
+
+// Mensagem
+const mensagem =
+    `🎁 Nova reserva!\n\n` +
+    `Nome: ${nome}\n` +
+    `Presente: ${nomePresente}`;
+
+// Abre WhatsApp
+window.open(
+    `https://wa.me/${telefone}?text=${encodeURIComponent(mensagem)}`,
+    "_blank"
+);
+
+carregarPresentes();
         });
 
     });
