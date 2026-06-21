@@ -118,7 +118,7 @@ button:hover {
 .hero{
     height: 100vh;
 
-    background-image: url("imagem/noivos.webp");
+    background-image: url("noivos.webp");
     background-size: cover;
     background-position: center;
 
