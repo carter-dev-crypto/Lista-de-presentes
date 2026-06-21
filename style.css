@@ -10,10 +10,10 @@ html{
 }
 
 body{
-    background: #f5f1e8;
+    background:  #f5f1e8;
     font-family: 'Poppins', sans-serif;
-    overflow-x: hidden;
 }
+
 
 
 #presentes{
@@ -136,7 +136,7 @@ button:hover {
 
 
 .overlay{
-    background: rgba(255, 255, 255, 0.4);
+    background: rgba(0, 0, 0, 0.4);
 
     width: 100%;
     height: 100%;
@@ -193,7 +193,7 @@ footer{
 .galeria{
     padding: 80px 20px;
     text-align: center;
-    background: #030303;
+    background: #f8f5f2;
 }
 
 .galeria h2{
@@ -244,35 +244,43 @@ footer{
 
 @media (max-width: 768px) {
 
-    .hero{
-        height: 100dvh;
-        min-height: 100dvh;
-        background-size: cover;
-        background-position: center center;
+    .overlay h1 {
+        font-size: 60px;
+        text-align: center;
     }
 
-    .overlay{
-        padding: 20px;
+    .overlay p:first-of-type {
+        font-size: 30px;
+    }
+
+    .overlay p {
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .btn-lista {
+        padding: 15px 35px;
+        font-size: 20px;
+    }
+
+    .hero {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+
     }
 
     .overlay h1{
         font-size: 42px;
         line-height: 1.1;
-        text-align: center;
         margin-bottom: 10px;
-    }
-
-    .overlay p:first-of-type{
-        font-size: 22px;
-        text-align: center;
     }
 
     .overlay p{
         font-size: 18px;
         text-align: center;
-        padding: 0 15px;
+        padding:0 15px;
     }
-
     .btn-lista{
         padding: 12px 25px;
         font-size: 18px;
