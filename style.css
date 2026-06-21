@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background:  #f5f1e8;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+#presentes{
+    width: 90%;
+    max-width: 1400px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.card{
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 410px;
+}
+
+.card h3{
+    margin-bottom: 15px;
+    margin-top: auto;
+}
+
+.disponivel{
+    color: green;
+    font-weight: bold;
+}
+
+.reservvado{
+    color: red;
+    font-weight: bold;
+}
+
+button{
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #d4af37;color: white;
+}
+
+button:hover{
+    opacity: .9;
+}
+
+#contador{
+    text-align: center;
+    padding: 30px;
+    background: white;
+    margin: 30px auto 50px;
+    padding: 35px;
+    max-width: 700px;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .8);
+}
+
+#tempo{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #6a0dad;
+    margin: 10px 0;
+}
+
+.foto-presente{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.card {
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    background: #6a0dad;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #6a0dad;
+}
+
+.hero{
+    height: 100vh;
+
+    background-image: url("imagem/noivos.webp");
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay{
+    background: rgba(0, 0, 0, 0.4);
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay h1{
+    color: white;
+    font-size: 70px;
+    font-family: 'Playfair Display' , serif;
+    margin: 0;
+}
+
+.overlay p{
+    color: white;
+    font-size: 40px;
+    margin: 0;
+}
+
+.overlay p2{
+    color: white;
+}
+
+.btn-lista{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: #663399;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-lista:hover{
+    transform: translateY(-3px);
+}
+
+footer{
+    text-align: center;
+    padding: 40px;
+    color: #666;
+}
+#footer p1{
+    color: #666;
+}
+
+
+
