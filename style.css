@@ -10,10 +10,10 @@ html{
 }
 
 body{
-    background:  #f5f1e8;
+    background: #f5f1e8;
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
-
 
 
 #presentes{
