@@ -84,7 +84,7 @@ const mensagem =
 
 // Abre WhatsApp
 const url  = 
-    `https://api.whatsapp.com/send?phone=${telefone}?text=${encodeURIComponent(mensagem)}`;
+    `https://api.whatsapp.com/send?phone=${telefone}&text=${encodeURIComponent(mensagem)}`;
 
 window.location.href = url;
 
