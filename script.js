@@ -74,7 +74,7 @@ const card = btn.closest(".card");
 const nomePresente = card.querySelector("h3").innerText;
 
 // Número que vai receber a mensagem
-const telefone = "558598683946";
+const telefone = "5585921865900";
 
 // Mensagem
 const mensagem =
